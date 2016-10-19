@@ -38,14 +38,11 @@ def findFrequentPatterns(tokens, minFreqThreshold):
         tokenIndex.clear()
         tokenIndex = newPatternIndex
 
-
     for phrase in frequentPatterns:
-        print phrase
+        print phrase, frequentPatterns[phrase]
+
+    return frequentPatterns
 
 
 
 
-
-    for token, positions in tokenIndex.items():
-        if len(positions) > minFreqThreshold:
-            print(token, len(positions))
